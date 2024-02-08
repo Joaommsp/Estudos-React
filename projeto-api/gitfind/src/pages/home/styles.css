@@ -1,0 +1,138 @@
+.content {
+  position: relative;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.background {
+  height: 80vh;
+  position: fixed;
+  left: 0;
+  z-index: -1;
+}
+
+.info {
+  width: 60%;
+  margin-top: 3rem;
+  margin-right: 10rem;
+  color: #ffffff;
+}
+
+.info > div:first-child {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  border-radius: 22px;
+  min-width: 250px;
+  width: 100%;
+  background-color: transparent;
+  font-size: 1.5em;
+  padding: 10px 20px;
+  margin-right: 1.5rem;
+  transition: background 0.5s ease-in-out;
+}
+
+input:hover {
+  background-color: #1b1b1b;
+  cursor: pointer;
+}
+
+button {
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  border-radius: 22px;
+  width: 20%;
+  background-color: #303030;
+  font-size: 1em;
+  padding: 10px 20px;
+  margin-right: 1.5rem;
+  transition: background 0.5s ease-in-out;
+}
+
+button:hover {
+  background-color: #1b1b1b;
+  cursor: pointer;
+}
+
+.perfil {
+  display: flex;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.profile {
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  width: 124px;
+  margin-right: 2rem;
+}
+
+.perfil h3 {
+  color: #a7a7a7;
+  font-size: 2em;
+  margin: 0;
+}
+
+.perfil span {
+  display: block;
+  color: #a7a7a7;
+  font-size: 0.8em;
+  margin: 0;
+}
+
+.perfil p {
+  color: #a7a7a7;
+  font-size: 0.8em;
+  margin: 2rem 0 0 0;
+}
+
+h4 {
+  font-size: 2.5em;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 860px) {
+  .info {
+    width: 100%;
+    margin-top: 3rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+  input {
+    min-width: 150px;
+    width: 60%;
+    font-size: 1em;
+    margin-right: 1rem;
+  }
+  button {
+    width: 30%;
+    font-size: 0.8em;
+    margin-right: 0;
+  }
+  .profile {
+    width: 100px;
+    height: 100px;
+    margin-right: 1.5rem;
+  }
+  .perfil h3 {
+    color: #a7a7a7;
+    font-size: 1.5em;
+    margin: 0;
+  }
+  .perfil p {
+    color: #a7a7a7;
+    font-size: 0.8em;
+    margin: 1rem 0 0 0;
+    text-align: center;
+  }
+}
